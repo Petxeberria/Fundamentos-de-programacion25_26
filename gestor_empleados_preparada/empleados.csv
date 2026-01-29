@@ -1,0 +1,11 @@
+id,nombre,apellidos,edad,correo,departamento
+1,Luis,Torres,53,luis.torres@empresa.com,Ventas
+2,Ana,Flores,25,ana.flores@empresa.com,Marketing
+3,Pedro,López,35,pedro.lópez@empresa.com,Marketing
+4,Pedro,Martínez,23,pedro.martínez@empresa.com,Ventas
+5,Laura,García,60,laura.garcía@empresa.com,IT
+6,Laura,Pérez,32,laura.pérez@empresa.com,Recursos Humanos
+7,Sofía,Pérez,45,sofía.pérez@empresa.com,Operaciones
+8,Carlos,Sánchez,60,carlos.sánchez@empresa.com,Recursos Humanos
+9,Juan,Hernández,49,juan.hernández@empresa.com,Ventas
+10,Sofía,Torres,48,sofía.torres@empresa.com,Finanzas

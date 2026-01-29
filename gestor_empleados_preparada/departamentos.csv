@@ -1,0 +1,8 @@
+id,nombre,empleados_necesarios,presupuesto,horas_disponibles
+1001,Recursos Humanos,3,50000,900
+1002,Desarrollo,12,180000,2400
+1003,Ventas,8,120000,1800
+1004,Marketing,5,80000,1400
+1005,IT,6,95000,1600
+1006,Operaciones,6,95000,1600
+1007,Finanzas,6,95000,1600
