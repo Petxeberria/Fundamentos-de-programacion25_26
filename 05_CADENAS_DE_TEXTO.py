@@ -2,11 +2,13 @@
 print("Hola Pakito")
 
 #Diferentes definiciones
-cadena_simple = 'Hola'
-cadena_doble = "Hola"
+cadena_simple = 'Hola t '
+cadena_doble = "Hola t "
 cadena_triple = """Hola
 Pakitoo"""
 
+print(cadena_simple)
+print(cadena_doble)
 print(cadena_triple)
 
 #Concatenacion
