@@ -1,0 +1,48 @@
+DOCUMENTO DE USO DE HERRAMIENTAS
+
+Asignatura: Fundamentos de Programación
+Alumno: Pablo Echeverria Legarra
+
+1. Creación del fichero de ejercicios y grupos musculares
+
+Para crear el fichero CSV con los ejercicios, grupos musculares y tiempos estimados, utilicé la herramienta de inteligencia artificial ChatGPT. Inicialmente generé la lista de ejercicios por grupo, luego agregué tiempos estimados por ejercicio (5-12 minutos) para hacer el cálculo de rutinas más preciso.
+
+Prompt inicial: "Genera un archivo CSV con ejercicios de gimnasio para los grupos musculares: hombro, biceps, triceps, pecho, espalda, pierna, abdominales. Mínimo 3, máximo 5 por grupo. Columnas: ejercicio, grupo_muscular."
+
+Prompt para tiempos: "Agrega una columna 'tiempo_minutos' al CSV anterior con tiempos estimados realistas para cada ejercicio (5-15 minutos)."
+
+Luego, copié la salida y la guardé en ejercicios.csv.
+
+2. Creación del script de Python
+
+El script rutina_gym.py fue desarrollado usando Python básico, sin programación orientada a objetos como se indicó. Utilicé las siguientes herramientas y pasos:
+
+- Librerías: csv para leer el archivo, os para manejar directorios y archivos, random para generar la rutina aleatoriamente.
+
+- Funciones creadas: cargar_ejercicios (lee CSV con tiempos), crear_rutina (genera rutina con cálculo de tiempos por ejercicio), guardar_rutina (guarda en txt), cargar_rutina (lista y muestra guardadas), menu (interfaz principal).
+
+- Para la generación de rutinas: Mezcla los grupos y los distribuye en días usando round-robin para asegurar que todos los grupos estén incluidos y cada día tenga al menos uno. Calcula tiempos sumando los minutos de cada ejercicio seleccionado, y ajusta quitando ejercicios de mayor tiempo si excede el límite por sesión.
+
+- Cambios realizados: Inicialmente usé tiempos por grupo, pero el usuario pidió tiempos por ejercicio, así que actualicé el CSV y el script para leer y calcular tiempos individuales, permitiendo un cálculo más preciso de si la rutina cabe en el tiempo especificado.
+
+- Modelo de IA usado: ChatGPT para generar el contenido del CSV con tiempos.
+
+3. Creación del código en C
+
+El programa juego_dados.c fue escrito en C estándar. Utilicé las librerías stdio.h, stdlib.h y time.h para entrada/salida, random y tiempo.
+
+- Funciones: tirar_dado, moneda, multiplicador_divisor, turno_jugador, turno_maquina.
+
+- La máquina juega de forma simple: tira hasta acumular más de 5 puntos o salir 1.
+
+- Modelo de IA: Ninguno, código implementado directamente siguiendo las reglas.
+
+Herramientas generales: VS Code para edición, terminal para pruebas.
+
+Comentarios adicionales: El usuario pidió modificar los tiempos de cada ejercicio en lugar de por grupo para un cálculo más preciso. Se actualizó el CSV y el script en consecuencia, agregando lógica para reducir ejercicios si excede el tiempo. Todo el código incluye comentarios explicativos siguiendo PEP8.
+
+Modificaciones posteriores:
+- Se movió el archivo ejercicios.csv a la carpeta Actividad_1 para centralizar todos los archivos del proyecto en un solo directorio.
+- Se actualizó el script rutina_gym.py para usar la ruta local 'ejercicios.csv' en lugar de rutas relativas complejas, simplificando la ejecución.
+- Se corrigió el manejo de rutas usando os.path para asegurar compatibilidad independientemente del directorio de ejecución.
+- Se actualizó este documento para reflejar todas las modificaciones, manteniendo trazabilidad completa del proceso de desarrollo.
