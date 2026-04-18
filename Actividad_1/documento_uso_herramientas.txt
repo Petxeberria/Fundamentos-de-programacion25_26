@@ -42,7 +42,22 @@ Herramientas generales: VS Code para edición, terminal para pruebas.
 Comentarios adicionales: El usuario pidió modificar los tiempos de cada ejercicio en lugar de por grupo para un cálculo más preciso. Se actualizó el CSV y el script en consecuencia, agregando lógica para reducir ejercicios si excede el tiempo. Todo el código incluye comentarios explicativos siguiendo PEP8.
 
 Modificaciones posteriores:
-- Se movió el archivo ejercicios.csv a la carpeta Actividad_1 para centralizar todos los archivos del proyecto en un solo directorio.
+- Se movió el archivo ejercicios.csv a la carpeta Actividad_1 para centralizar todos los archivos del proyecto en un solo directorio, he utulizaado el pront:"Quiero que todo este dentro de la carpeta Actividad_1. Asique cambia todas las direcciones si es necesario pra que todo quede dentro" 
 - Se actualizó el script rutina_gym.py para usar la ruta local 'ejercicios.csv' en lugar de rutas relativas complejas, simplificando la ejecución.
 - Se corrigió el manejo de rutas usando os.path para asegurar compatibilidad independientemente del directorio de ejecución.
 - Se actualizó este documento para reflejar todas las modificaciones, manteniendo trazabilidad completa del proceso de desarrollo.
+- Cada vez que tenia un error en el terminal, se lo he pasado al modelo para que pueda corregirlo.
+- Tambien he tenido que corregir el tiempo utilizado en cada dia porque al principio solo usaba unos minustos, con este pront: "Cuántos días a la semana vas a entrenar (3-5): 5
+Cuánto tiempo por sesión en minutos (45-90): 56
+Rutina generada:
+Día 1: Encogimientos de hombros, Remo con mancuerna, Extensiones de tríceps con mancuerna, Extensiones de tríceps con barra - Tiempo estimado: 32 min
+Día 2: Press de hombros, Elevaciones de piernas, Russian twists - Tiempo estimado: 22 min
+Día 3: Curl de bíceps con mancuernas - Tiempo estimado: 8 min
+Día 4: Aperturas con mancuernas - Tiempo estimado: 8 min
+Día 5: Elevaciones de talones - Tiempo estimado: 6 min
+Nombre para guardar la rutina: teste3
+Rutina guardada.
+
+Porque la rutina generada no aproecha todo el tiempo disponible en cada dia?"
+
+Añadir que eb este caso solo he utilizado el modelo disponible en visual studio code pero que esxiten otros modelos de texto y agenticos que podrian hacer un trabajo mejor o mas complicado. En este caso no era necesario utilizarlos.
